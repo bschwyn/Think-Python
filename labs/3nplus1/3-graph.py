@@ -17,18 +17,30 @@ def seq3np1_count(n):
             n = n * 3 + 1
     print(count)
 
-def seq3np1_range(upperbound):
-   for i in range(1,upperbound+1):
-       seq3np1_count(i)
+#def seq3np1_range(upperbound):
+ #  for i in range(1,upperbound+1):
+  #     seq3np1_count(i)
 
 wn=turtle.Screen()        
 line=turtle.Turtle()
 
-def linegraph(n):
+def linegraph(upperbound):
 	line.penup()
 	line.goto(-100,-100)
 	line.pendown()
+	for i in range(1,upperbound+1):
+        x=20
 
+		line.goto(x,y)
+
+seq3np1_count(1)
+seq3np1_count(2)
+seq3np1_count(3)
+seq3np1_count(4)
+seq3np1_count(5)
+
+linegraph(5)
     
 
 wn.exitonclick()
+
