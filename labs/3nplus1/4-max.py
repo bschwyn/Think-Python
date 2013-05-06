@@ -1,5 +1,5 @@
-#Repeat the call to seq3np1 using a range of values,
-# up to and including an upper bound.
+#keep track of the maximum number of iterations
+
 
 import turtle
 
@@ -26,11 +26,19 @@ line.goto(-200,-200)
 line.pendown()
 
 def linegraph(upperbound):
+    maxSoFar = 0
     for i in range(1,upperbound+1):
-        y=seq3np1_count(i)*20-200
+        sq=seq3np1_count(i)
+        y=sq*20-200
         x=i*20-200
         line.goto(x,y)
         line.stamp()
+        line.write('  '+str(sq))
+        if sq > maxSoFar:
+            maxSoFar = sq
+    print('the max is ',maxSoFar)
+    
+        
        
      
 linegraph(20)

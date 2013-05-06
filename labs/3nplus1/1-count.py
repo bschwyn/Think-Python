@@ -3,7 +3,7 @@
 #1st exercise
 #return number in sequence
 def seq3np1_count(n):
-    """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
+    """ Prints the number of iterations for the 3n+1 sequence to stop."""
 
     count = 1 
     while n != 1:
