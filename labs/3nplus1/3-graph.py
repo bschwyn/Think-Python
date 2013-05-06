@@ -1,5 +1,5 @@
-#Repeat the call to seq3np1 using a range of values,
-# up to and including an upper bound.
+#Use tutrtle graphics to graph the number of iterations
+
 
 import turtle
 
