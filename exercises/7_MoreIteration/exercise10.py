@@ -20,9 +20,9 @@ for col in range(image.getWidth()):
     for row in range(image.getHeight()):
        p = img.agegetPixel(col,row)
 	   
-	   newred = 
-       newgreen = gray
-       newblue = gray
+	   newred = .393*p.getRed()+.769*p.getGreen()+.189*p.getBlue()
+       newgreen = p.getRed()*.349+p.getGreen()*.686+p.getBlue()*.168
+       newblue = p.getRed()*.272+p.getGreen()*.534+p.getBlue()*.131
 
 
        newpixel = img.Pixel(newred,newgreen,newblue)

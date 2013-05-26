@@ -5,3 +5,12 @@
 #To shrink the image the scale factor should be between 0 and 1
 # to enlarge the image the scaling factor should be greater that
 #should be greater than 1.
+
+import image
+
+img = image.Image("myImage")
+def 
+newImg = image.EmptyImage(img.getWidth(),img.getHeight())
+win = imgage.ImageWin()
+
+newImg()
